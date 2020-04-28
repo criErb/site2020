@@ -1,0 +1,12 @@
+.c-menu {
+
+}
+
+.c-menu__bar {
+    width: $base-unit * 2;
+    height: 100vh;
+    background-color: $secondary-color;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

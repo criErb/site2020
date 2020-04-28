@@ -1,10 +1,49 @@
-@font-face {
-  font-family: "AvenirNextBold";
-  src: url("../fonts/AvenirNext-Bold.ttf"); }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-@font-face {
-  font-family: "AvenirNextRegular";
-  src: url("../fonts/AvenirNext-Regular.ttf"); }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 *,
 *::after,
@@ -20,19 +59,59 @@ html, body {
 body {
   font-family: "AvenirNextRegular", sans-serif; }
 
+@media screen and (min-width: 53em) {
+  :root {
+    font-size: 18px; }
+  body {
+    overflow: hidden; }
+  .c-trail__content {
+    height: 100vh;
+    overflow: hidden; } }
+
+@font-face {
+  font-family: "PlayfairDisplaySemiBold";
+  src: url("../fonts/PlayfairDisplay-SemiBold.ttf"); }
+
+@font-face {
+  font-family: "PlayfairDisplayRegular";
+  src: url("../fonts/PlayfairDisplay-Regular.ttf"); }
+
+@font-face {
+  font-family: "AvenirNextBold";
+  src: url("../fonts/AvenirNext-Bold.ttf"); }
+
+@font-face {
+  font-family: "AvenirNextRegular";
+  src: url("../fonts/AvenirNext-Regular.ttf"); }
+
+.c-trail {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .c-trail__content {
-  height: 300px;
+  width: 100%;
+  height: 400px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  isolation: isolate; }
+  isolation: isolate;
+  overflow: visible; }
   .c-trail__content a {
+    margin-top: 80px;
     z-index: 10000; }
 
+strong {
+  font-family: 'PlayfairDisplaySemiBold', serif;
+  font-weight: 600;
+  letter-spacing: 0.4px; }
+
 .c-trail__title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'PlayfairDisplayRegular', serif;
   position: relative;
   z-index: 10000;
   font-size: 40px;
@@ -49,11 +128,21 @@ body {
   opacity: 0;
   will-change: transform; }
 
-@media screen and (min-width: 53em) {
-  :root {
-    font-size: 18px; }
-  body {
-    overflow: hidden; }
-  .c-trail__content {
-    height: 100vh;
-    overflow: hidden; } }
+.c-menu__bar {
+  width: 16px;
+  height: 100vh;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.c-grid {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap; }
+
+.c-grid__item {
+  display: flex;
+  border: 1px solid;
+  flex-basis: 50%;
+  height: 50vh; }

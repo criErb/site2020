@@ -1,0 +1,13 @@
+
+.c-grid {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.c-grid__item {
+	display: flex;
+	border: 1px solid;
+	flex-basis: 50%;
+	height: 50vh;
+}
