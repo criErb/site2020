@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "AvenirNextBold";
+  src: url("../fonts/AvenirNext-Bold.ttf"); }
+
+@font-face {
+  font-family: "AvenirNextRegular";
+  src: url("../fonts/AvenirNext-Regular.ttf"); }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+:root {
+  font-size: 16px; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-family: "AvenirNextRegular", sans-serif; }
+
+.c-trail__content {
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  isolation: isolate; }
+  .c-trail__content a {
+    z-index: 10000; }
+
+.c-trail__title {
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  z-index: 10000;
+  font-size: 40px;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  font-weight: 400;
+  text-align: center; }
+
+.c-trail__img {
+  max-width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  will-change: transform; }
+
+@media screen and (min-width: 53em) {
+  :root {
+    font-size: 18px; }
+  body {
+    overflow: hidden; }
+  .c-trail__content {
+    height: 100vh;
+    overflow: hidden; } }
