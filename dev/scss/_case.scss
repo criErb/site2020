@@ -52,6 +52,7 @@
 .c-case__row {
     width: 100%;
     display: flex;
+    align-items: flex-start;
 }
 
 .c-case__col {
@@ -63,11 +64,21 @@
     }
 }
 
+.c-case__col--sticky {
+    position: sticky;
+    top: unit(10);
+    margin-right: unit(10);
+}
+
 .c-case__col--image {
     width: 100%;
     flex-basis: 100%;
     display: flex;
     margin-bottom: unit(10);
+}
+
+.c-case__col--center {
+    justify-content: center;
 }
 
 .c-case__palette {
