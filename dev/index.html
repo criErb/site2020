@@ -32,8 +32,28 @@
 				<a href="works.html">Works</a>
 			</div>				
 		</main>
-		<nav class="c-menu__bar"></nav>
+
+		<!-- menu panel and toggle -->
+		<div class="c-menu" id="menu-panel">
+			<ul class="c-menu__list">
+				<li><a href="">Mainpage</a></li>
+				<li><a href="works.html">Works</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contacts</a></li>
+			</ul>
+		</div>
+		<nav class="c-menu__bar">
+			<div class="c-menu__toggle" onclick="menuToggle()">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</nav>
+
+		<!-- scripts -->
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/TweenMax.min.js"></script>
-		<script src="js/imgTrail.js"></script></body>
+		<script src="js/imgTrail.js"></script>
+		<script src="js/menu.js"></script>
+	</body>
 </html>
