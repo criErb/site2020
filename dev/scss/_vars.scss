@@ -7,6 +7,11 @@ $color-tertiary: #FF3366;
 // base unit property for measures and spacing
 $base-unit: 8px;
 
+// font styles
 $font-main-heading: 400 40px/1.5 'PlayfairDisplayRegular', serif;
 $font-sub-heading: 400 20px/1.5 'AvenirNextRegular', sans-serif;
+$font-stop-heading: 400 24px/1.5 'PlayfairDisplayRegular', serif;
 $font-paragraph: 400 16px/1.5 'AvenirNextRegular', sans-serif;
+
+// base width
+$container-width: 1080px
