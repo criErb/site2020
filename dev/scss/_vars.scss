@@ -1,7 +1,12 @@
 
 // brand color
-$primary-color: #FFF;
-$secondary-color: #000;
+$color-primary: #FFF;
+$color-secondary: #000;
+$color-tertiary: #FF3366;
 
 // base unit property for measures and spacing
 $base-unit: 8px;
+
+$font-main-heading: 400 40px/1.5 'PlayfairDisplayRegular', serif;
+$font-sub-heading: 400 20px/1.5 'AvenirNextRegular', sans-serif;
+$font-paragraph: 400 16px/1.5 'AvenirNextRegular', sans-serif;

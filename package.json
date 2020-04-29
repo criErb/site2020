@@ -17,6 +17,9 @@
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-file-include": "^2.2.2",
+    "gulp-hbs": "^0.2.0",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^4.1.0"
   }

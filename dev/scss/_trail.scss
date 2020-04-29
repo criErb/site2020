@@ -18,6 +18,7 @@
     overflow: visible;
 
 	a {
+		color: $color-tertiary;
         margin-top: unit(10);
 		z-index: 10000;
 	}
@@ -30,13 +31,11 @@ strong {
 }
 
 .c-trail__title {
-	font-family: 'PlayfairDisplayRegular', serif;
+	font: $font-main-heading;
 	position: relative;
 	z-index: 10000;
-	font-size: 40px;
 	mix-blend-mode: difference;
 	pointer-events: none;
-	font-weight: 400;
 	text-align: center;
 }
 
