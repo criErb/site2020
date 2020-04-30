@@ -1,0 +1,33 @@
+.glide__slide {
+    display: flex;
+    justify-content: center;
+}
+
+.glide__arrow {
+    color: initial;
+    transform: translateY(-50%) rotate(-90deg);
+    box-shadow: initial;
+    border: none;
+    font: $font-paragraph;
+}
+
+.glide__arrow--right {
+    right: 5rem;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.glide__bullets {
+    bottom: unit(-5);
+}
+
+.glide__bullet {
+    background-color: $color-secondary;
+    box-shadow: none;
+    width: unit(1.5);
+    height: unit(1.5);
+}
+
+.glide__bullet--active {
+    background-color: $color-primary;
+    border: 1px solid $color-grey;
+}

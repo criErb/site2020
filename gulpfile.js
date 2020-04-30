@@ -39,6 +39,7 @@ gulp.task('serve', function() {
 
     gulp.watch('dev/scss/*.scss', gulp.series('sass'));
     gulp.watch('dev/**/*.html', gulp.series('html'));
+    gulp.watch('dev/img/**', gulp.series('images'));
     gulp.watch('dev/js/*.js', gulp.series('script'));
 });
 

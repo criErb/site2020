@@ -1,23 +1,14 @@
 
 .c-grid {
 	display: flex;
-	// width: calc(100% - 80px);
-	width: calc(200vw - 80px);
 	height: 100vh;
 	align-items: center;
 	justify-content: center;
-	// flex-wrap: wrap;
-	// max-width: 1080px;
-	// margin: 0 auto;
-	// margin-top: unit(10);
-	// margin-bottom: unit(10);
 }
 
 .c-grid__item {
 	display: flex;
 	flex-direction: column;
-	// width: 50%;
-	// flex-basis: 50%;
 	min-height: 50vh;
 	padding: unit(2);
 }

@@ -8,12 +8,14 @@ function menuToggle() {
     if (menuPanel.style.display === "none") {
     menuPanel.style.display = "block";
     menuIconFirst.style.transform = "rotate(45deg)";
+    menuIconFirst.style.top = "12px";
     menuIconSecond.style.display = "none";
     menuIconThird.style.transform = "rotate(-45deg)";
-    menuIconThird.style.top = "0";
+    menuIconThird.style.top = "12px";
 } else {
     menuPanel.style.display = "none";
     menuIconFirst.style.transform = "rotate(0)";
+    menuIconFirst.style.top = "0";
     menuIconSecond.style.display = "block";
     menuIconThird.style.transform = "rotate(0)";
     menuIconThird.style.top = "16px";

@@ -1,0 +1,9 @@
+.c-footer {
+    border-top: 1px solid $color-ultra-light;
+    height: unit(20);
+    max-width: $container-width;
+    margin: 0 auto;
+    margin-top: unit(4);
+    display: flex;
+    align-items: center;
+}

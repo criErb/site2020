@@ -22,9 +22,16 @@
     }
     
     a {
-        color: $color-primary;
+        color: $color-grey;
         text-decoration: none;
+
+        &.c-menu__list--active {
+            color: $color-primary;
+            font-weight: 600;
+            text-decoration: underline;
+        }
     }
+    
 }
 
 .c-menu__bar {
@@ -41,9 +48,8 @@
 
 .c-menu__toggle {
     width: unit(3);
-    height: unit(2.5);
+    height: unit(3);
     position: relative;
-    transform: translateY(-50%);
     cursor: pointer;
     
     span {
@@ -54,7 +60,7 @@
         position: absolute;
 
         &:first-child {
-            top: unit(0);
+            top: 0;
         }
         
         &:nth-child(2) {

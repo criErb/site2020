@@ -1,52 +1,18 @@
 .c-case {
-    margin-top: unit(12);
-    margin-bottom: unit(12);
+    margin-top: unit(22);
+    margin-bottom: unit(22);
     
     p {
         font: $font-paragraph;
+        color: $color-grey;
     }
 }
+
+// layout
 
 .c-case__container {
     max-width: $container-width;
     margin: 0 auto;
-    margin-top: unit(12);
-    margin-bottom: unit(20);
-
-}
-
-.c-case__title {
-    font: $font-main-heading;
-    color: $color-secondary;
-    margin-bottom: unit(3);
-}
-
-.c-case__subtitle {
-    font: $font-stop-heading;    
-    margin-bottom: unit(3);
-}
-
-
-.c-case__stop-heading {
-    display: block;
-    font: $font-stop-heading;    
-    margin-bottom: unit(5);
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
-.c-case__image {
-    max-width: $container-width;
-    margin: 0 auto;
-    height: unit(70);
-    margin-top: unit(10);
-    margin-bottom: unit(10);
-    background-size: cover;
-}
-
-.c-case__image--full {
-    max-width: initial;
-    width: 100%;
 }
 
 .c-case__row {
@@ -70,7 +36,7 @@
     margin-right: unit(10);
 }
 
-.c-case__col--image {
+.c-case__col--full {
     width: 100%;
     flex-basis: 100%;
     display: flex;
@@ -80,6 +46,52 @@
 .c-case__col--center {
     justify-content: center;
 }
+
+// headings
+
+.c-case__title {
+    font: $font-main-heading;
+    color: $color-secondary;
+    margin-bottom: unit(3);
+}
+
+.c-case__title--secondary {
+    font: $font-stop-heading;    
+}
+
+
+.c-case__title--tertiary {
+    display: block;
+    margin-bottom: unit(5);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+// media
+
+.c-case__image {
+    max-width: $container-width;
+    margin: 0 auto;
+    height: unit(70);
+    margin-top: unit(10);
+    margin-bottom: unit(10);
+    background-size: cover;
+}
+
+.c-case__image--full {
+    max-width: initial;
+    width: 100%;
+}
+
+.c-case__video {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: unit(10);
+    margin-bottom: unit(10);
+    object-fit: cover;
+}
+
+// palette
 
 .c-case__palette {
     width: 100%;
