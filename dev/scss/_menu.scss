@@ -1,11 +1,15 @@
 .c-menu {
- position: fixed;
- top: 0;
- left: 0;
- bottom: 0;
- right: 0;
- background-color: $color-secondary;
- display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $color-primary;
+    display: none;
+
+    @media screen and (min-width: $bp-m) {             
+        background-color: $color-secondary;            
+    }
 }
 
 .c-menu__list {
@@ -19,16 +23,27 @@
     li {
         margin-bottom: unit(6);
         font-size: 40px;
+        
+        &:nth-child(3) a,
+        &:nth-child(4) a {
+            text-decoration: line-through;
+            cursor: not-allowed; 
+        }
+        
     }
     
     a {
         color: $color-grey;
         text-decoration: none;
-
+        
         &.c-menu__list--active {
-            color: $color-primary;
+            color: $color-secondary;            
             font-weight: 600;
             text-decoration: underline;
+            
+            @media screen and (min-width: $bp-m) {             
+                color: $color-primary;
+            }
         }
     }
     
@@ -36,14 +51,19 @@
 
 .c-menu__bar {
     width: unit(10);
-    height: 100vh;
-    background-color: $color-secondary;
+    height: unit(15);
+    background: none;
     position: fixed;
     top: 0;
     right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    @media screen and (min-width: $bp-m) { 
+        height: 100vh;
+        background-color: $color-secondary;
+    }
 }
 
 .c-menu__toggle {
@@ -54,10 +74,14 @@
     
     span {
         display: block;
-        background-color: $color-primary;
+        background-color: $color-secondary;            
         width: unit(3);
         height: unit(.2);
         position: absolute;
+        
+        @media screen and (min-width: $bp-m) {             
+            background-color: $color-primary;
+        }
 
         &:first-child {
             top: 0;
@@ -70,7 +94,6 @@
         
         &:nth-child(3) {
             top: unit(2);
-
         }
     }
 }

@@ -151,13 +151,13 @@
                 opacity: 1,
                 zIndex: this.zIndexVal,
                 x: cacheMousePos.x - img.rect.width/2,
-                y: cacheMousePos.y - img.rect.height/2
+                y: cacheMousePos.y - img.rect.height-34
             }, 0)
             // animate position
             .to(img.DOM.el, 1.6, {
                 ease: Expo.easeOut,
                 x: mousePos.x - img.rect.width/2,
-                y: mousePos.y - img.rect.height/2
+                y: mousePos.y - img.rect.height-34
             }, 0)
             // then make it disappear
             .to(img.DOM.el, 1, {
@@ -167,7 +167,7 @@
             // translate down the image
             .to(img.DOM.el, 1, {
                 ease: Quint.easeInOut,
-                y: `+=${winsize.height + img.rect.height/2}`
+                y: `+=${winsize.height + img.rect.height-34}`
             }, 0.4);
         }
     }

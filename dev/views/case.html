@@ -89,7 +89,11 @@
                 <span class="c-case__title c-case__title--tertiary">Buttons</span>
                 <div class="c-case__row">
                     <div class="c-case__col c-case__col--full">
-                        <img src="img/case/chanel/component-buttons.jpg" alt="">
+                        <!-- <img src="img/case/chanel/component-buttons.jpg" alt=""> -->
+                        <picture>
+                            <source srcset="img/case/chanel/component-buttons.jpg" media="(min-width:1080px)">
+                            <img srcset="img/case/chanel/component-buttons-mobile.jpg" alt="">                            
+                          </picture>
                     </div>
                 </div>
                 <div class="c-case__row">
@@ -204,8 +208,8 @@
 		@@include('../blocks/menu.html', {
             "link1": "index.html",
 			"link2": "works.html",
-			"link3": "about.html",
-            "link4": "contacts.html",
+			"link3": "#",
+            "link4": "#",
             "linkClass1": "",
 			"linkClass2": "c-menu__list--active",
 			"linkClass3": "",

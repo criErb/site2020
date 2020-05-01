@@ -22,7 +22,35 @@
                     <ul class="glide__slides">
                         <li class="glide__slide">
                             <a href="case.html" class="c-grid__item c-works-item">
-                                <img src="https://via.placeholder.com/500" alt="">
+                                <img src="img/case/chanel/case-cover.jpg" alt="">
+                                <h2 class="c-works-item__title">
+                                    Chanel website
+                                </h2>
+                                <span class="c-works-item__description">
+                                    UI design Concept
+                                </span>
+                                <span href="" class="c-works-item__link">
+                                    Watch case &rarr;
+                                </span>
+                            </a>
+                        </li>
+                        <li class="glide__slide">
+                            <a href="case.html" class="c-grid__item c-works-item">
+                                <img src="img/case/chanel/case-cover.jpg" alt="">
+                                <h2 class="c-works-item__title">
+                                    Fila PWA
+                                </h2>
+                                <span class="c-works-item__description">
+                                    UI design Concept
+                                </span>
+                                <span href="" class="c-works-item__link">
+                                    Watch case &rarr;
+                                </span>
+                            </a>
+                        </li>
+                        <li class="glide__slide">
+                            <a href="case.html" class="c-grid__item c-works-item">
+                                <img src="img/case/chanel/case-cover.jpg" alt="">
                                 <h2 class="c-works-item__title">
                                     Title
                                 </h2>
@@ -36,35 +64,7 @@
                         </li>
                         <li class="glide__slide">
                             <a href="case.html" class="c-grid__item c-works-item">
-                                <img src="https://via.placeholder.com/500" alt="">
-                                <h2 class="c-works-item__title">
-                                    Title
-                                </h2>
-                                <span class="c-works-item__description">
-                                    Description
-                                </span>
-                                <span href="" class="c-works-item__link">
-                                    Watch case &rarr;
-                                </span>
-                            </a>
-                        </li>
-                        <li class="glide__slide">
-                            <a href="case.html" class="c-grid__item c-works-item">
-                                <img src="https://via.placeholder.com/500" alt="">
-                                <h2 class="c-works-item__title">
-                                    Title
-                                </h2>
-                                <span class="c-works-item__description">
-                                    Description
-                                </span>
-                                <span href="" class="c-works-item__link">
-                                    Watch case &rarr;
-                                </span>
-                            </a>
-                        </li>
-                        <li class="glide__slide">
-                            <a href="case.html" class="c-grid__item c-works-item">
-                                <img src="https://via.placeholder.com/500" alt="">
+                                <img src="img/case/chanel/case-cover.jpg" alt="">
                                 <h2 class="c-works-item__title">
                                     Title
                                 </h2>
@@ -81,12 +81,6 @@
                         <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
                         <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
                     </div>
-                    <!-- <div class="glide__bullets" data-glide-el="controls[nav]">
-                        <button class="glide__bullet" data-glide-dir="=0"></button>
-                        <button class="glide__bullet" data-glide-dir="=1"></button>
-                        <button class="glide__bullet" data-glide-dir="=2"></button>
-                        <button class="glide__bullet" data-glide-dir="=3"></button>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -95,21 +89,34 @@
 			"link1": "index.html",
 			"link2": "works.html",
 			"link3": "about.html",
-			"link4": "contacts.html"
+			"link4": "contacts.html",
+            "linkClass1": "",
+			"linkClass2": "c-menu__list--active",
+			"linkClass3": "",
+			"linkClass4": ""
         })      
           
         <script src="js/menu.js"></script>
         <script src="js/glide/glide.min.js"></script>
         <script>
+
             var glide = new Glide('#glide', {
-            autoplay: 4000,
-            animationDuration: 2000,
-            focusAt: 'center',
-            hoverpause: true,
-            keyboard: true
-            })
+                type: 'carousel',
+                autoplay: 4000,
+                animationDuration: 2000,
+                focusAt: 'center',
+                hoverpause: true,
+                keyboard: true,
+                perView: 1,
+                breakpoints: {
+                    1180: {
+                        perView: 1
+                    }
+                }
+            });
 
             glide.mount()
+
         </script>
     </body>
 

@@ -1,7 +1,12 @@
 .c-case {
     margin-top: unit(22);
     margin-bottom: unit(22);
+    padding: unit(3);
     
+    @media screen and (min-width: $bp-m) {             
+        padding-right: unit(13); 
+    }
+
     p {
         font: $font-paragraph;
         color: $color-grey;
@@ -19,11 +24,14 @@
     width: 100%;
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-.c-case__col {
-    width: 50%;
-    flex-basis: 50%;
+.c-case__col {    
+    
+    @media screen and (min-width: $bp-m) {             
+        width: calc(50% - 80px);
+    }
 
     p {
         margin-bottom: unit(5);
@@ -31,9 +39,12 @@
 }
 
 .c-case__col--sticky {
-    position: sticky;
-    top: unit(10);
-    margin-right: unit(10);
+    
+    @media screen and (min-width: $bp-m) {             
+        position: sticky;
+        top: unit(10);
+        margin-right: unit(10);
+    }
 }
 
 .c-case__col--full {
@@ -50,9 +61,13 @@
 // headings
 
 .c-case__title {
-    font: $font-main-heading;
+    font: $font-main-heading--mobile;
     color: $color-secondary;
     margin-bottom: unit(3);
+    
+    @media screen and (min-width: $bp-m) {             
+        font: $font-main-heading;
+    }
 }
 
 .c-case__title--secondary {
@@ -72,10 +87,16 @@
 .c-case__image {
     max-width: $container-width;
     margin: 0 auto;
-    height: unit(70);
-    margin-top: unit(10);
-    margin-bottom: unit(10);
+    height: unit(35);
+    margin-top: unit(6);
+    margin-bottom: unit(6);
     background-size: cover;
+    
+    @media screen and (min-width: $bp-m) {             
+        height: unit(70);
+        margin-top: unit(10);
+        margin-bottom: unit(10);
+    }
 }
 
 .c-case__image--full {
@@ -96,18 +117,25 @@
 .c-case__palette {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-top: unit(8);
     margin-bottom: unit(8);
-
+    
     div {
-        height: unit(40);
+        height: unit(30);
         display: flex;
         align-items: flex-end;
         color: $color-primary;
-        flex-basis: 15%;
+        flex-basis: 30%;
         justify-content: center;
         padding-bottom: unit(3);
+        margin-bottom: unit(3);
+        
+        @media screen and (min-width: $bp-m) {             
+            height: unit(40);
+            flex-basis: 15%;
+        }
     }
 }

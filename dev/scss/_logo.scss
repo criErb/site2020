@@ -4,7 +4,11 @@
     left: unit(5);
 
     img {
-        width: unit(5);
+        width: unit(2.5);
+        
+        @media screen and (min-width: $bp-m) {             
+            width: unit(5);            
+        }
     }
 
     footer & {
