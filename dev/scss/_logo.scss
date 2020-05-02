@@ -1,7 +1,15 @@
 .c-logo {
-    position: fixed;
+    position: initial;
+    margin: unit(3.5) 0 0 unit(3.5);
+    display: block;
     top: unit(5);
     left: unit(5);
+    
+    @media screen and (min-width: $bp-m) {             
+        position: fixed;        
+        top: unit(5);
+        left: unit(5);
+    }
 
     img {
         width: unit(2.5);

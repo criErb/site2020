@@ -9,7 +9,11 @@
 }
 
 html, body {
-	height: 100%;
+	height: initial;
+	
+	@media screen and (min-width: $bp-m) {             
+		height: 100%;
+	}
 }
 
 body {

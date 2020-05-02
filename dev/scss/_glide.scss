@@ -4,8 +4,7 @@
 }
 
 .glide__arrow {
-    color: initial;
-    transform: translateY(-50%) rotate(-90deg);
+    color: initial;    
     box-shadow: initial;
     border: none;
     font: $font-paragraph;
@@ -14,18 +13,40 @@
 
 .glide__arrow--left {
     left: 0;
-    transform: translateY(-50%) rotate(90deg);
-
-    @media screen and (min-width: $bp-m) {             
-        left: 1rem;    
+    
+    &:before {
+        content: '←';
+        display: block;
     }
+    
+    @media screen and (min-width: $bp-m) {             
+        transform: translateY(-50%) rotate(90deg);
+        left: 1rem;    
+
+        &:before {
+            content: 'prev';
+        }
+    }
+    
 }
 
 .glide__arrow--right {
     right: 0;
-    transform: translateY(-50%) rotate(90deg);
+    
+    &:before {
+        content: '→';
+        display: block;
+    }
 
     @media screen and (min-width: $bp-m) {             
+        transform: translateY(-50%) rotate(90deg);
         right: 5.5rem;    
+
+        &:before {
+            content: 'next';        
+        }
     }
-}
+
+
+    
+}    
