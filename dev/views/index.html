@@ -31,9 +31,9 @@
 				<img class="c-trail__img" src="img/trail/chanel3.jpg" alt="Some image" />
 				<img class="c-trail__img" src="img/trail/chanel4.jpg" alt="Some image" />
 				<img class="c-trail__img" src="img/trail/chanel1.jpg" alt="Some image" />
-				<h1 class="c-trail__title">I'm a <strong> Multidisciplinary Visual Designer</strong>,</br>specializing in User Intefaces.</h1>
+				<h1 class="c-trail__title" data-aos="fade-up" data-aos-duration="1500">I'm a <strong> Multidisciplinary Visual Designer</strong>,</br>specializing in User Intefaces.</h1>
 			</div>				
-			<a href="works.html">Works &rarr;</a>
+			<a href="works.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Works &rarr;</a>
 		</main>
 		
 		@@include('../blocks/menu.html', {
@@ -52,5 +52,10 @@
 		<script src="js/TweenMax.min.js"></script>
 		<script src="js/imgTrail.js"></script>
 		<script src="js/menu.js"></script>
+		<script src="js/aos/aos.min.js"></script>
+
+		<script>
+			AOS.init()
+		</script>
 	</body>
 </html>

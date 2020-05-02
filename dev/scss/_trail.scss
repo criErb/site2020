@@ -17,7 +17,7 @@
 		bottom: unit(8);
 		
 		@media screen and (min-width: $bp-m) {             
-			bottom: unit(10);
+			bottom: unit(14);
         }
 	}
 }
@@ -68,6 +68,6 @@ strong {
 		left: 0;
 		opacity: 0;
 		will-change: transform;	
-	}
+		}
 	
 }

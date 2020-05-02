@@ -73,7 +73,7 @@
             <div class="glide" id="glide">
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
-                        <li class="glide__slide">
+                        <li class="glide__slide" data-aos="fade-up" data-aos-duration="1500">
                             <a href="case.html" class="c-grid__item c-works-item">
                                 <img src="img/case/chanel/case-cover.jpg" alt="">
                                 <h2 class="c-works-item__title">
@@ -87,7 +87,7 @@
                                 </span>
                             </a>
                         </li>
-                        <li class="glide__slide">
+                        <li class="glide__slide" data-aos="fade-up" data-aos-duration="1500">
                             <a href="case.html" class="c-grid__item c-works-item">
                                 <img src="img/case/chanel/case-cover.jpg" alt="">
                                 <h2 class="c-works-item__title">
@@ -101,7 +101,7 @@
                                 </span>
                             </a>
                         </li>
-                        <li class="glide__slide">
+                        <li class="glide__slide" data-aos="fade-up" data-aos-duration="1500">
                             <a href="case.html" class="c-grid__item c-works-item">
                                 <img src="img/case/chanel/case-cover.jpg" alt="">
                                 <h2 class="c-works-item__title">
@@ -115,7 +115,7 @@
                                 </span>
                             </a>
                         </li>
-                        <li class="glide__slide">
+                        <li class="glide__slide" data-aos="fade-up" data-aos-duration="1500">
                             <a href="case.html" class="c-grid__item c-works-item">
                                 <img src="img/case/chanel/case-cover.jpg" alt="">
                                 <h2 class="c-works-item__title">
@@ -156,8 +156,9 @@
           
         <script src="js/menu.js"></script>
         <script src="js/glide/glide.min.js"></script>
+        <script src="js/aos/aos.min.js"></script>
         <script>
-
+            
             var glide = new Glide('#glide', {
                 type: 'carousel',
                 autoplay: 4000,
@@ -174,6 +175,8 @@
             });
 
             glide.mount()
+            
+            AOS.init()
 
         </script>
     </body>
