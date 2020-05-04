@@ -10,15 +10,17 @@ $color-ultra-light: #f2f2f2;
 $base-unit: 8px;
 
 // font styles
-$font-main-heading: 400 40px/1.5 'PlayfairDisplayRegular', serif;
-$font-main-heading--mobile: 400 30px/1.5 'PlayfairDisplayRegular', serif;
-$font-sub-heading: 400 20px/1.5 'AvenirNextRegular', sans-serif;
-$font-sub-heading--mobile: 400 16px/1.5 'AvenirNextRegular', sans-serif;
-$font-stop-heading: 400 24px/1.5 'PlayfairDisplayRegular', serif;
-$font-paragraph: 400 16px/1.5 'AvenirNextRegular', sans-serif;
+$font-main-heading: 400 54px/1.5 'PlayfairDisplayRegular', serif;
+$font-main-heading--mobile: 400 34px/1.5 'PlayfairDisplayRegular', serif;
+$font-sub-heading: 100 20px/1.5 'YantramanavThin', sans-serif;
+$font-sub-heading--mobile: 100 16px/1.5 'YantramanavThin', sans-serif;
+$font-stop-heading: 100 50px/1.5 'YantramanavThin', serif;
+$font-stop-heading--mobile: 100 26px/1.5 'YantramanavThin', serif;
+$font-paragraph: 300 20px/1.5 'YantramanavLight', sans-serif;
+$font-paragraph--mobile: 300 18px/1.5 'YantramanavLight', sans-serif;
 
 // base width
-$container-width: 1080px;
+$container-width: 1280px;
 
 // break point
 $bp-m: 1180px

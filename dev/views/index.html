@@ -1,48 +1,36 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Cristiano Erbacci | Multidisciplinary Designer</title>
-		<meta name="description" content="Cristiano Erbacci is an Italian based Multidisciplinary Designer">
-		<meta name="keywords" content="design, web design, ui design, racing design, cristiano erbacci" />
-		<meta name="author" content="Cristiano Erbacci" />
-		<link rel="stylesheet" type="text/css" href="css/styles.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-	</head>
-	<body>
-		
-		@@include('../blocks/logo.html')
-		
-		<main class="c-trail">		
+		@@include('../blocks/head.html')
+
+		<main class="c-trail" data-aos="fade-up" data-aos-duration="1500">		
 			<div class="c-trail__content">
 				<img class="c-trail__img" src="img/trail/chanel1.jpg" alt="Some image" />
 				<img class="c-trail__img" src="img/trail/chanel2.jpg" alt="Some image" />
-				<img class="c-trail__img" src="img/trail/chanel3.jpg" alt="Some image" />
-				<img class="c-trail__img" src="img/trail/chanel4.jpg" alt="Some image" />
-				<img class="c-trail__img" src="img/trail/chanel3.jpg" alt="Some image" />
-				<img class="c-trail__img" src="img/trail/chanel2.jpg" alt="Some image" />
 				<img class="c-trail__img" src="img/trail/chanel1.jpg" alt="Some image" />
-				<img class="c-trail__img" src="img/trail/chanel1.jpg" alt="Some image" />
-				<img class="c-trail__img" src="img/trail/chanel3.jpg" alt="Some image" />
 				<img class="c-trail__img" src="img/trail/chanel4.jpg" alt="Some image" />
 				<img class="c-trail__img" src="img/trail/chanel1.jpg" alt="Some image" />
 				<img class="c-trail__img" src="img/trail/chanel2.jpg" alt="Some image" />
-				<img class="c-trail__img" src="img/trail/chanel3.jpg" alt="Some image" />
+				<img class="c-trail__img" src="img/trail/chanel1.jpg" alt="Some image" />
+				<img class="c-trail__img" src="img/trail/chanel1.jpg" alt="Some image" />
+				<img class="c-trail__img" src="img/trail/chanel1.jpg" alt="Some image" />
 				<img class="c-trail__img" src="img/trail/chanel4.jpg" alt="Some image" />
 				<img class="c-trail__img" src="img/trail/chanel1.jpg" alt="Some image" />
-				<h1 class="c-trail__title" data-aos="fade-up" data-aos-duration="1500">I'm a <strong> Multidisciplinary Visual Designer</strong>,</br>specializing in User Intefaces.</h1>
+				<img class="c-trail__img" src="img/trail/chanel2.jpg" alt="Some image" />
+				<img class="c-trail__img" src="img/trail/chanel1.jpg" alt="Some image" />
+				<img class="c-trail__img" src="img/trail/chanel4.jpg" alt="Some image" />
+				<img class="c-trail__img" src="img/trail/chanel1.jpg" alt="Some image" />
+				<h1 class="c-trail__title">I'm a Product and Visual Designer,</br>specialized in Interface Design.</h1>
 			</div>				
-			<a href="works.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Works &rarr;</a>
+			<a class="c-trail__link" href="works.html">Works &rarr;</a>
 		</main>
+		<span class="c-trail__firm">©2020 Cristiano Erbacci ____________</span>
 		
+
 		@@include('../blocks/menu.html', {
 			"link1": "index.html",
 			"link2": "works.html",
 			"link3": "#",
 			"link4": "#",
 			"linkClass1": "c-menu__list--active",
-            "linkClass2": "",
+			"linkClass2": "",
 			"linkClass3": "",
 			"linkClass4": ""
 		})
@@ -57,5 +45,5 @@
 		<script>
 			AOS.init()
 		</script>
-	</body>
+    </body>
 </html>

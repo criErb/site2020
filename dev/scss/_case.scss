@@ -1,15 +1,16 @@
 .c-case {
-    margin-top: unit(22);
-    margin-bottom: unit(22);
+    margin-top: unit(10);
+    margin-bottom: unit(10);
     padding: unit(3);
     
     @media screen and (min-width: $bp-m) {             
+        margin-top: unit(12);
+        margin-bottom: unit(12);
         padding-right: unit(13); 
-    }
-
-    p {
-        font: $font-paragraph;
-        color: $color-grey;
+        
+        p {
+            font: $font-paragraph;
+        }
     }
 
     img {
@@ -34,11 +35,8 @@
 .c-case__col {    
     
     @media screen and (min-width: $bp-m) {             
-        width: calc(50% - 80px);
-    }
-
-    p {
-        margin-bottom: unit(5);
+        min-width: 50%;
+        width: 50%;
     }
 }
 
@@ -46,6 +44,8 @@
     
     @media screen and (min-width: $bp-m) {             
         position: sticky;
+        min-width: calc(50% - 80px);
+        width: calc(50% - 80px);
         top: unit(10);
         margin-right: unit(10);
     }
@@ -62,28 +62,46 @@
     justify-content: center;
 }
 
-// headings
+// text format
 
 .c-case__title {
     font: $font-main-heading--mobile;
     color: $color-secondary;
-    margin-bottom: unit(3);
+    margin-bottom: unit(.5);
     
     @media screen and (min-width: $bp-m) {             
+        margin-bottom: unit(1);
         font: $font-main-heading;
     }
 }
 
 .c-case__title--secondary {
-    font: $font-stop-heading;    
+    color: $color-grey;
+    font: $font-stop-heading--mobile;    
+    margin-bottom: unit(1.5);
+    
+    @media screen and (min-width: $bp-m) {             
+        margin-bottom: unit(3);
+        font: $font-stop-heading;
+    }
 }
 
 
-.c-case__title--tertiary {
-    display: block;
-    margin-bottom: unit(5);
-    font-size: 18px;
-    text-transform: uppercase;
+// .c-case__title--tertiary {
+//     display: block;
+//     margin-bottom: unit(5);
+//     font-size: 18px;
+//     text-transform: uppercase;
+// }
+
+.c-case__paragraph {    
+    margin-bottom: unit(8);
+    font: $font-paragraph--mobile;
+    
+    @media screen and (min-width: $bp-m) {             
+        margin-bottom: unit(10);
+        font: $font-paragraph;
+    }    
 }
 
 // media
