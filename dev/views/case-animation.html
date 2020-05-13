@@ -1,0 +1,42 @@
+        @@include('../blocks/head.html')
+ 
+        <main class="c-case">
+            <div class="c-case__container">
+                <h1 class="c-case__title">Animation Showcase</h1>                
+                <h2 class="c-case__title c-case__title--secondary">Raccolta di animazioni UI</h2>
+                <p class="c-case__paragraph">Le animazioni occupano un ruolo importante nella valutazione positiva di una esperienza.</p>                
+            </div>
+            <div class="c-case__container c-case__container--video" data-aos="fade-up" data-aos-duration="1500">
+                <video class="c-case__video c-case__video--smartphone" autoplay loop>
+                    <source src="img/case/animation/animation-showcase-video-01.mp4" type="video/mp4">
+                </video>
+                <caption>Carousel slider and image zoom.</caption>
+            </div>
+            <div class="c-case__container c-case__container--video" data-aos="fade-up" data-aos-duration="1500">
+                <video class="c-case__video c-case__video--smartphone" autoplay loop>
+                    <source src="img/case/animation/animation-showcase-video-02.mp4" type="video/mp4">
+                </video>
+                <caption>Card horizontal slider on drag, card view on tap.</caption>
+            </div>
+      
+        </main>
+        
+		@@include('../blocks/menu.html', {
+            "link1": "index.html",
+			"link2": "works.html",
+			"link3": "#",
+            "link4": "#",
+            "linkClass1": "",
+			"linkClass2": "c-menu__list--active",
+			"linkClass3": "",
+			"linkClass4": ""
+        })      
+          
+        
+        <script src="js/menu.js"></script>        
+        <script src="js/aos/aos.min.js"></script>
+        <script>
+            AOS.init();
+        </script>      
+
+        @@include('../blocks/footer.html')

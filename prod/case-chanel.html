@@ -1,9 +1,27 @@
-        @@include('../blocks/head.html')
+        <!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cristiano Erbacci | Product and Visual Designer</title>
+		<meta name="description" content="Cristiano Erbacci is an Italian based Multidisciplinary Designer">
+		<meta name="keywords" content="design, web design, ui design, racing design, cristiano erbacci" />
+        <meta name="author" content="Cristiano Erbacci" />
+        <link rel="stylesheet" href="js/glide/css/glide.core.min.css">
+        <link rel="stylesheet" href="js/glide/css/glide.theme.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body>
+		
+	<a class="c-logo" href="index.html">
+    <img src="img/svg/logo.svg" />
+</a>
  
         <main class="c-case">
             <div class="c-case__container">
-                <h1 class="c-case__title">Chanel website redesign concept</h1>                
-                <h2 class="c-case__title c-case__title--secondary">Rebranding UI</h2>
+                <h1 class="c-case__title">Chanel website</h1>                
+                <h2 class="c-case__title c-case__title--secondary">UI Design Concept</h2>
                 <p class="c-case__paragraph">Reinterpretazione della interfaccia del sito, creazione della Component Library, leggera rivisitazione dell'architettura del menu.</p>                
             </div>
             <div class="c-case__image c-case__image--full" style="background-image: url(img/case/chanel/chanel-full1.jpg)"></div>
@@ -140,16 +158,21 @@
             </div>            
         </main>
         
-		@@include('../blocks/menu.html', {
-            "link1": "index.html",
-			"link2": "works.html",
-			"link3": "#",
-            "link4": "#",
-            "linkClass1": "",
-			"linkClass2": "c-menu__list--active",
-			"linkClass3": "",
-			"linkClass4": ""
-        })      
+		<div class="c-menu" id="menu-panel" style="display: none">
+	<ul class="c-menu__list">
+		<li><a href="index.html" class="">Mainpage</a></li>
+		<li><a href="works.html" class="c-menu__list--active">Works</a></li>
+		<li><a href="#" class="">About</a></li>
+		<li><a href="#" class="">Contacts</a></li>
+	</ul>
+</div>
+<nav class="c-menu__bar">
+	<div class="c-menu__toggle" onclick="menuToggle()">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</nav>      
           
         
         <script src="js/menu.js"></script>        
@@ -158,4 +181,12 @@
             AOS.init();
         </script>      
 
-        @@include('../blocks/footer.html')
+                <footer class="c-footer">
+            <a class="c-logo" href="index.html">
+    <img src="img/svg/logo.svg" />
+</a>
+
+            <span>©2020 Cristiano Erbacci. All content copyright.</span>
+        </footer>
+    </body>
+</html>
