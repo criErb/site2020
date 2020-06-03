@@ -61,10 +61,13 @@ html, body {
       height: 100%; } }
 
 body {
-  font-family: "YantramanavLight", sans-serif; }
+  font-family: "RobotoCondensedLight", sans-serif; }
 
 img {
   width: 100%; }
+
+.page-contacts {
+  height: initial; }
 
 @media screen and (min-width: 53em) {
   :root {
@@ -82,16 +85,8 @@ img {
   src: url("../fonts/PlayfairDisplay-Regular.ttf"); }
 
 @font-face {
-  font-family: "YantramanavRegular";
-  src: url("../fonts/Yantramanav-Regular.ttf"); }
-
-@font-face {
-  font-family: "YantramanavLight";
-  src: url("../fonts/Yantramanav-Light.ttf"); }
-
-@font-face {
-  font-family: "YantramanavThin";
-  src: url("../fonts/Yantramanav-Thin.ttf"); }
+  font-family: "RobotoCondensedLight";
+  src: url("../fonts/RobotoCondensed-Light.ttf"); }
 
 .c-trail {
   height: 70vh;
@@ -117,11 +112,10 @@ img {
       justify-content: center;
       overflow: hidden;
       height: 100%; } }
-
-strong {
-  font-family: 'PlayfairDisplaySemiBold', serif;
-  font-weight: 600;
-  letter-spacing: 0.4px; }
+  .c-trail__content strong {
+    font-family: 'PlayfairDisplaySemiBold', serif;
+    font-weight: 600;
+    letter-spacing: 0.4px; }
 
 .c-trail__title {
   font: 400 34px/1.5 "PlayfairDisplayRegular", serif;
@@ -191,10 +185,6 @@ strong {
   .c-menu__list li {
     margin-bottom: 48px;
     font-size: 40px; }
-    .c-menu__list li:nth-child(3) a,
-    .c-menu__list li:nth-child(4) a {
-      text-decoration: line-through;
-      cursor: not-allowed; }
   .c-menu__list a {
     color: #737885;
     text-decoration: none; }
@@ -319,15 +309,15 @@ strong {
       font: 400 54px/1.5 "PlayfairDisplayRegular", serif; } }
 
 .c-works-item__description {
-  font: 100 16px/1.5 "YantramanavThin", sans-serif;
+  font: 100 14px/1.5 "RobotoCondensedLight", sans-serif;
   color: #4F4F4F;
   margin-left: 8px; }
   @media screen and (min-width: 1180px) {
     .c-works-item__description {
-      font: 100 20px/1.5 "YantramanavThin", sans-serif; } }
+      font: 100 18px/1.5 "RobotoCondensedLight", sans-serif; } }
 
 .c-works-item__link {
-  font: 300 20px/1.5 "YantramanavLight", sans-serif;
+  font: 300 18px/1.5 "RobotoCondensedLight", sans-serif;
   color: #FF3366;
   text-decoration: underline;
   margin-top: 8px;
@@ -343,7 +333,7 @@ strong {
       margin-bottom: 96px;
       padding-right: 104px; }
       .c-case p {
-        font: 300 20px/1.5 "YantramanavLight", sans-serif; } }
+        font: 300 18px/1.5 "RobotoCondensedLight", sans-serif; } }
   .c-case img {
     height: 100%; }
 
@@ -371,6 +361,9 @@ strong {
   .c-case__col {
     min-width: 50%;
     width: 50%; } }
+
+.c-case__col strong {
+  font-family: "RobotoCondensedLight", sans-serif; }
 
 @media screen and (min-width: 1180px) {
   .c-case__col--sticky {
@@ -400,20 +393,29 @@ strong {
 
 .c-case__title--secondary {
   color: #737885;
-  font: 100 26px/1.5 "YantramanavThin", serif;
+  font: 100 24px/1.5 "RobotoCondensedLight", serif;
   margin-bottom: 12px; }
   @media screen and (min-width: 1180px) {
     .c-case__title--secondary {
       margin-bottom: 24px;
-      font: 100 50px/1.5 "YantramanavThin", serif; } }
+      font: 100 42px/1.5 "RobotoCondensedLight", serif; } }
 
 .c-case__paragraph {
   margin-bottom: 64px;
-  font: 300 18px/1.5 "YantramanavLight", sans-serif; }
+  font: 300 16px/1.5 "RobotoCondensedLight", sans-serif; }
   @media screen and (min-width: 1180px) {
     .c-case__paragraph {
       margin-bottom: 80px;
-      font: 300 20px/1.5 "YantramanavLight", sans-serif; } }
+      font: 300 18px/1.5 "RobotoCondensedLight", sans-serif; } }
+
+.c-case__caption {
+  width: 100%;
+  text-align: center;
+  display: block;
+  font: 300 16px/1.5 "RobotoCondensedLight", sans-serif; }
+  @media screen and (min-width: 1180px) {
+    .c-case__caption {
+      font: 300 18px/1.5 "RobotoCondensedLight", sans-serif; } }
 
 .c-case__image {
   max-width: 1280px;
@@ -483,23 +485,228 @@ strong {
         height: 320px;
         flex-basis: 15%; } }
 
+.c-about {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 24px; }
+  @media screen and (min-width: 1180px) {
+    .c-about {
+      margin-top: 96px;
+      margin-bottom: 96px;
+      padding-right: 104px; }
+      .c-about p {
+        font: 300 18px/1.5 "RobotoCondensedLight", sans-serif; } }
+  .c-about img {
+    height: 100%; }
+  .c-about a {
+    color: #FF3366; }
+
+.c-about__container {
+  max-width: 1280px;
+  margin: 0 auto; }
+  @media screen and (min-width: 1180px) {
+    .c-about__container {
+      margin-top: 40px;
+      margin-bottom: 80px; } }
+
+.c-about__row {
+  width: 100%; }
+  @media screen and (min-width: 1180px) {
+    .c-about__row {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap; } }
+
+@media screen and (min-width: 1180px) {
+  .c-about__col {
+    min-width: 50%;
+    width: 50%; } }
+
+.c-about__col strong {
+  font-family: "RobotoCondensedLight", sans-serif; }
+
+.c-about__col--center {
+  justify-content: center; }
+
+.c-about__title {
+  font: 400 34px/1.5 "PlayfairDisplayRegular", serif;
+  color: #000;
+  margin-bottom: 4px; }
+  @media screen and (min-width: 1180px) {
+    .c-about__title {
+      margin-bottom: 8px;
+      font: 400 54px/1.5 "PlayfairDisplayRegular", serif; } }
+
+.c-about__title--secondary {
+  color: #737885;
+  font: 100 24px/1.5 "RobotoCondensedLight", serif;
+  margin-bottom: 12px; }
+  @media screen and (min-width: 1180px) {
+    .c-about__title--secondary {
+      margin-bottom: 24px;
+      font: 100 42px/1.5 "RobotoCondensedLight", serif; } }
+
+.c-about__paragraph {
+  margin-bottom: 64px;
+  font: 300 16px/1.5 "RobotoCondensedLight", sans-serif; }
+  @media screen and (min-width: 1180px) {
+    .c-about__paragraph {
+      margin-bottom: 80px;
+      font: 300 18px/1.5 "RobotoCondensedLight", sans-serif; } }
+
+.c-about__image {
+  margin-bottom: 48px;
+  border-top: 1px solid #737885;
+  padding: 32px 0;
+  display: block;
+  max-width: 240px; }
+  @media screen and (min-width: 1180px) {
+    .c-about__image {
+      max-width: initial;
+      width: 400px;
+      padding: 0 32px;
+      border-left: 1px solid #737885;
+      border-top: none;
+      margin-bottom: initial;
+      margin-left: auto; } }
+
+.c-about__list {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%; }
+  .c-about__list span {
+    display: block;
+    color: #737885;
+    font: 100 24px/1.5 "RobotoCondensedLight", serif;
+    margin-bottom: 8px; }
+    @media screen and (min-width: 1180px) {
+      .c-about__list span {
+        margin-bottom: 24px;
+        font: 100 42px/1.5 "RobotoCondensedLight", serif; } }
+  .c-about__list ul {
+    margin-bottom: 48px; }
+  .c-about__list li {
+    width: 100%;
+    margin-bottom: 16px;
+    list-style-position: inside; }
+    @media screen and (min-width: 1180px) {
+      .c-about__list li {
+        width: auto; } }
+  .c-about__list ul li {
+    list-style-type: disc;
+    padding-left: 44px;
+    margin-bottom: 12px;
+    font-size: 16px; }
+
+.c-contacts {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 24px; }
+  @media screen and (min-width: 1180px) {
+    .c-contacts {
+      margin-top: 96px;
+      margin-bottom: 96px;
+      padding-right: 104px; }
+      .c-contacts p {
+        font: 300 18px/1.5 "RobotoCondensedLight", sans-serif; } }
+  .c-contacts img {
+    height: 100%; }
+  .c-contacts a {
+    color: #FF3366; }
+
+.c-contacts__container {
+  max-width: 1280px;
+  margin: 0 auto; }
+  @media screen and (min-width: 1180px) {
+    .c-contacts__container {
+      margin-top: 40px;
+      margin-bottom: 80px; } }
+
+.c-contacts__row {
+  width: 100%; }
+  @media screen and (min-width: 1180px) {
+    .c-contacts__row {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap; } }
+
+@media screen and (min-width: 1180px) {
+  .c-contacts__col {
+    min-width: 50%;
+    width: 50%; } }
+
+.c-contacts__col strong {
+  font-family: "RobotoCondensedLight", sans-serif; }
+
+.c-contacts__col--center {
+  justify-content: center; }
+
+.c-contacts__title {
+  font: 400 34px/1.5 "PlayfairDisplayRegular", serif;
+  color: #000;
+  margin-bottom: 4px; }
+  @media screen and (min-width: 1180px) {
+    .c-contacts__title {
+      margin-bottom: 8px;
+      font: 400 54px/1.5 "PlayfairDisplayRegular", serif; } }
+
+.c-contacts__title--secondary {
+  color: #737885;
+  font: 100 24px/1.5 "RobotoCondensedLight", serif;
+  margin-bottom: 12px; }
+  @media screen and (min-width: 1180px) {
+    .c-contacts__title--secondary {
+      margin-bottom: 24px;
+      font: 100 42px/1.5 "RobotoCondensedLight", serif; } }
+
+.c-contacts__paragraph {
+  margin-bottom: 64px;
+  font: 300 16px/1.5 "RobotoCondensedLight", sans-serif; }
+  @media screen and (min-width: 1180px) {
+    .c-contacts__paragraph {
+      margin-bottom: 80px;
+      font: 300 18px/1.5 "RobotoCondensedLight", sans-serif; } }
+
+@media screen and (min-width: 1180px) {
+  .c-contacts__image {
+    max-width: 464px;
+    margin-left: auto;
+    display: block; } }
+
+.c-contacts__list ul {
+  margin-bottom: 48px; }
+
+.c-contacts__list li {
+  margin-bottom: 16px; }
+
+.c-contacts__list ul li {
+  list-style-type: disc;
+  margin-left: 44px;
+  margin-bottom: 12px;
+  font-size: 16px; }
+
 .c-footer {
   border-top: 1px solid #f2f2f2;
   height: 160px;
-  max-width: 1280px;
   margin: 0 auto;
   margin-top: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 24px; }
+  @media screen and (min-width: 1180px) {
+    .c-footer {
+      padding: 24px 56px;
+      margin-right: 80px; } }
   .c-footer span {
-    font: 300 20px/1.5 "YantramanavLight", sans-serif;
+    font: 300 18px/1.5 "RobotoCondensedLight", sans-serif;
     font-size: 12px;
     color: #737885; }
     @media screen and (min-width: 1180px) {
       .c-footer span {
-        font: 300 20px/1.5 "YantramanavLight", sans-serif;
+        font: 300 18px/1.5 "RobotoCondensedLight", sans-serif;
         font-size: 16px; } }
 
 .glide__slide {
@@ -510,7 +717,7 @@ strong {
   color: initial;
   box-shadow: initial;
   border: none;
-  font: 300 20px/1.5 "YantramanavLight", sans-serif;
+  font: 300 18px/1.5 "RobotoCondensedLight", sans-serif;
   font-size: 14px; }
 
 .glide__arrow--left {

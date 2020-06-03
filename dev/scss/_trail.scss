@@ -26,13 +26,14 @@
 		overflow: hidden;
 		height: 100%;
 	}
+	
+	strong {
+		font-family: 'PlayfairDisplaySemiBold', serif;
+		font-weight: 600;
+		letter-spacing: 0.4px;
+	}
 }
 
-strong {
-	font-family: 'PlayfairDisplaySemiBold', serif;
-	font-weight: 600;
-	letter-spacing: 0.4px;
-}
 
 .c-trail__title {
 	font: $font-main-heading--mobile;

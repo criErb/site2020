@@ -23,7 +23,7 @@
 .c-case__container {
     max-width: $container-width;
     margin: 0 auto;
-
+    
     @media screen and (min-width: $bp-m) {             
         margin-top: unit(5);
         margin-bottom: unit(10);        
@@ -37,7 +37,7 @@
 
 .c-case__row {
     width: 100%;
-
+    
     @media screen and (min-width: $bp-m) {             
         display: flex;
         align-items: flex-start;
@@ -50,6 +50,10 @@
     @media screen and (min-width: $bp-m) {             
         min-width: 50%;
         width: 50%;
+    }
+    
+    strong {
+        font-family: "RobotoCondensedLight", sans-serif;
     }
 }
 
@@ -105,6 +109,17 @@
     
     @media screen and (min-width: $bp-m) {             
         margin-bottom: unit(10);
+        font: $font-paragraph;
+    }    
+}
+
+.c-case__caption {   
+    width: 100%;
+    text-align: center;
+    display: block;
+    font: $font-paragraph--mobile;
+    
+    @media screen and (min-width: $bp-m) {             
         font: $font-paragraph;
     }    
 }

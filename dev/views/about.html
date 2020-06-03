@@ -1,0 +1,90 @@
+@@include('../blocks/head.html')
+
+<main class="c-about">
+    <div class="c-about__container">
+        <h1 class="c-about__title">About</h1>                
+        <h2 class="c-about__title c-about__title--secondary">Design + Code</h2>
+        <div class="c-about__row">
+            <div class="c-about__col">
+                <p class="c-about__paragraph">
+                    My name's Cristiano Erbacci and I'm a Visual Designer with a strong Front-end Developer background experience. <br>
+                    I'm in love with everything is related to visual design, typography, design systems, branding and animations. <br>
+                    I've worked for rising startups, renowned design studios and software houses. <br>
+                    Currently Front-end Developer at <a href="https://tangible.is">Tangible</a>.
+                </p> 
+            </div>
+            <div class="c-about__col">
+                <img class="c-about__image" srcset="img/cristiano-erbacci.jpg" alt="Cristiano Erbacci">                            
+            </div>
+        </div>
+    </div>
+    <div class="c-about__container">
+        <h2 class="c-about__title c-about__title--secondary">Process</h2>
+        <div class="c-about__row">
+            <ol class="c-about__list">
+                <li>
+                    <span>__01</span>
+                    <ul>
+                        <li>Goals & Values</li>                               
+                        <li>Audience</li>                               
+                        <li>Benchmark</li>                           
+                        <li>Tech analysis</li>                            
+                        <li>Moodboard</li>                            
+                    </ul>
+                </li>
+                <li>
+                    <span>__02</span>
+                    <ul>
+                        <li>Co-design</li>                               
+                        <li>Wireframe</li>                               
+                        <li>Styletile</li>                            
+                        <li>Components inventory</li>                            
+                        <li>Design System</li>                          
+                        <li>Prototyping</li>                            
+                    </ul>
+                </li>
+                <li>
+                    <span>__03</span>
+                    <ul>
+                        <li>Front-end</li>                               
+                        <li>A11y</li>                            
+                        <li>Handoff</li>                               
+                        <li>Documentation</li>                            
+                        <li>Design System Evolution</li>                          
+                    </ul>
+                </li>
+            </ol> 
+        </div>
+    </div>
+    <div class="c-about__container">
+        <h2 class="c-about__title c-about__title--secondary">Drop a line</h2>
+        <div class="c-about__row">
+            <p class="c-about__paragraph">
+                I'm always interested to meet design enthusiasts like me. <br>
+                Text me an email at <a href="mailto:info@cristianoerbacci.it">info@cristianoerbacci.it</a>.
+            </p>                            
+
+        </div>
+    </div>
+    
+</main>
+        
+		@@include('../blocks/menu.html', {
+            "link1": "index.html",
+			"link2": "works.html",
+			"link3": "about.html",
+			"link4": "contacts.html",
+            "linkClass1": "",
+			"linkClass2": "",
+			"linkClass3": "c-menu__list--active",
+			"linkClass4": ""
+        })      
+          
+        
+        <script src="js/menu.js"></script>        
+        <script src="js/aos/aos.min.js"></script>
+        <script>
+            AOS.init();
+        </script>      
+
+        @@include('../blocks/footer.html')

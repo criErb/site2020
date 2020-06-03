@@ -1,13 +1,18 @@
 .c-footer {
     border-top: 1px solid $color-ultra-light;
     height: unit(20);
-    max-width: $container-width;
+    // max-width: $container-width;
     margin: 0 auto;
     margin-top: unit(4);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: unit(3);
+    
+    @media screen and (min-width: $bp-m) {                         
+        padding: unit(3) unit(7);
+        margin-right: unit(10);
+    }
 
     span {
         font: $font-paragraph;
@@ -19,4 +24,5 @@
             font-size: unit(2);
         }
     }
+    
 }

@@ -1,0 +1,128 @@
+.c-contacts {
+    margin-top: unit(10);
+    margin-bottom: unit(10);
+    padding: unit(3);
+    
+    @media screen and (min-width: $bp-m) {             
+        margin-top: unit(12);
+        margin-bottom: unit(12);
+        padding-right: unit(13); 
+        
+        p {
+            font: $font-paragraph;
+        }
+    }
+
+    img {
+        height: 100%;
+    }
+
+    a {
+        color: $color-tertiary;
+    }
+}
+
+// layout
+
+.c-contacts__container {
+    max-width: $container-width;
+    margin: 0 auto;
+    
+    @media screen and (min-width: $bp-m) {             
+        margin-top: unit(5);
+        margin-bottom: unit(10);        
+    }
+}
+
+.c-contacts__row {
+    width: 100%;
+    
+    @media screen and (min-width: $bp-m) {             
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+.c-contacts__col {    
+    
+    @media screen and (min-width: $bp-m) {             
+        min-width: 50%;
+        width: 50%;
+    }
+    
+    strong {
+        font-family: "RobotoCondensedLight", sans-serif;
+    }
+}
+
+.c-contacts__col--center {
+    justify-content: center;
+}
+
+// text format
+
+.c-contacts__title {
+    font: $font-main-heading--mobile;
+    color: $color-secondary;
+    margin-bottom: unit(.5);
+    
+    @media screen and (min-width: $bp-m) {             
+        margin-bottom: unit(1);
+        font: $font-main-heading;
+    }
+}
+
+.c-contacts__title--secondary {
+    color: $color-grey;
+    font: $font-stop-heading--mobile;    
+    margin-bottom: unit(1.5);
+    
+    @media screen and (min-width: $bp-m) {             
+        margin-bottom: unit(3);
+        font: $font-stop-heading;
+    }
+}
+
+.c-contacts__paragraph {    
+    margin-bottom: unit(8);
+    font: $font-paragraph--mobile;
+    
+    @media screen and (min-width: $bp-m) {             
+        margin-bottom: unit(10);
+        font: $font-paragraph;
+    }    
+}
+
+// media
+
+.c-contacts__image {
+    
+    @media screen and (min-width: $bp-m) {   
+        max-width: unit(58);
+        margin-left: auto;       
+        display: block;   
+    }
+}
+
+.c-contacts__list {
+    
+    @media screen and (min-width: $bp-m) {           
+        
+    }
+    
+    ul {
+        margin-bottom: unit(6);
+    }
+    
+    li {
+        margin-bottom: unit(2);
+    }
+    
+    ul li {
+        list-style-type: disc;
+        margin-left: unit(5.5);
+        margin-bottom: unit(1.5);
+        font-size: unit(2);
+    }
+}

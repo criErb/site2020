@@ -1,0 +1,39 @@
+@@include('../blocks/head.html', {
+    "bodyClass": "page-contacts"
+})
+
+<main class="c-contacts">
+    <div class="c-contacts__container">
+        <h1 class="c-contacts__title">Contacts</h1>                
+        <h2 class="c-contacts__title c-contacts__title--secondary">Drop a line</h2>
+        <div class="c-contacts__row">
+            <div class="c-contacts__col">
+                <p class="c-case__paragraph">
+                    I'm always interested to meet design enthusiasts like me. <br>
+                    Text me an email at <a href="mailto:info@cristianoerbacci.it">info@cristianoerbacci.it</a>.
+                </p>   
+            </div>
+        </div>
+    </div>
+    
+</main>
+        
+		@@include('../blocks/menu.html', {
+            "link1": "index.html",
+			"link2": "works.html",
+			"link3": "about.html",
+			"link4": "contacts.html",
+            "linkClass1": "",
+			"linkClass2": "",
+			"linkClass3": "",
+			"linkClass4": "c-menu__list--active"
+        })      
+          
+        
+        <script src="js/menu.js"></script>        
+        <script src="js/aos/aos.min.js"></script>
+        <script>
+            AOS.init();
+        </script>      
+
+        @@include('../blocks/footer.html')
